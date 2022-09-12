@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  height: 50vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.container .panel {
+  position: relative;
+  width: 100rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.container .panel .card-contain {
+  position: absolute;
+  color: white;
+  left: 1rem;
+  top: 1rem;
+}
+
+.container .panel .card-image img {
+  min-height: 50vh;
+
+  z-index: -100;
+}
+
+.panel.active {
+  width: 200rem;
+}
